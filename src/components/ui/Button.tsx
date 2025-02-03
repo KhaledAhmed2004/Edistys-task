@@ -1,4 +1,12 @@
-const Button = ({ children, className, ...props }) => {
+const Button = ({
+  children,
+  className,
+  ...props
+}: {
+  children: React.ReactNode;
+  className?: string;
+  [key: string]: any;
+}) => {
   return (
     <button
       // className={`flex items-center justify-center space-x-2 rounded bg-[#fe8b53] px-10 py-4 text-lg font-semibold text-white transition-all hover:bg-[#ff7a42] md:py-5 ${className}`}
